@@ -1,0 +1,54 @@
+<html>
+
+<head>
+    <script src="https://cdn.socket.io/4.4.1/socket.io.min.js"
+        integrity="sha384-fKnu0iswBIqkjxrhQCTZ7qlLHOFEgNkRmK2vaO/LbTZSXdJfAu6ewRBdwHPhBo/H"
+        crossorigin="anonymous"></script>
+    <script defer src="./scripts.js"></script>
+</head>
+<style>
+    body {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    #message-container {
+        width: 80%;
+        max-width: 1200px;
+    }
+
+    #message-container div {
+        background-color: #CCC;
+        padding: 5px;
+    }
+
+    #message-container div:nth-child(2n) {
+        background-color: #FFF;
+    }
+
+    #send-message-container {
+        position: fixed;
+        padding-bottom: 30px;
+        bottom: 0;
+        background-color: white;
+        max-width: 1200px;
+        width: 80%;
+        display: flex;
+    }
+
+    #message-input {
+        flex-grow: 1;
+    }
+</style>
+
+<body>
+    <div id="message-container"></div>
+    <form action="" id="send-message-container">
+        <input type="text" id="message-input">
+        <button type="submit" id="send-button">Send</button>
+    </form>
+</body>
+
+</html>
